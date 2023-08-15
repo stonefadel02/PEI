@@ -10,25 +10,25 @@
             -webkit-animation: slide-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
             animation: slide-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
         }
-    
+
         @-webkit-keyframes slide-left {
             0% {
                 -webkit-transform: translateX(300px);
                 transform: translateX(300px);
             }
-    
+
             100% {
                 -webkit-transform: translateX(0);
                 transform: translateX(0);
             }
         }
-    
+
         @keyframes slide-left {
             0% {
                 -webkit-transform: translateX(300px);
                 transform: translateX(300px);
             }
-    
+
             100% {
                 -webkit-transform: translateX(0);
                 transform: translateX(0);
@@ -40,94 +40,99 @@
 </head>
 
 <body class="bg-white-900">
-<!-- navbar -->
-<div class="bg-white flex justify-between items-center px-4 relative">
-    <div class="flex gap-10">
-        <img width="70" height="50"
-            src="https://i0.wp.com/pleiadexpertise.com/wp-content/uploads/2022/05/IMG-20190826-WA0180-removebg-preview.png?fit=500%2C500&amp;ssl=1"
-            class="attachment-full size-full wp-image-454 jetpack-lazy-image jetpack-lazy-image--handled" alt="logo.png"
-            loading="eager" srcset="
+    <!-- navbar -->
+    <div class="bg-white flex justify-between items-center px-4 relative">
+        <div class="flex gap-10">
+            <img width="70" height="50"
+                src="https://i0.wp.com/pleiadexpertise.com/wp-content/uploads/2022/05/IMG-20190826-WA0180-removebg-preview.png?fit=500%2C500&amp;ssl=1"
+                class="attachment-full size-full wp-image-454 jetpack-lazy-image jetpack-lazy-image--handled"
+                alt="logo.png" loading="eager" srcset="
             https://i0.wp.com/pleiadexpertise.com/wp-content/uploads/2022/05/IMG-20190826-WA0180-removebg-preview.png?w=500&amp;ssl=1            500w,
             https://i0.wp.com/pleiadexpertise.com/wp-content/uploads/2022/05/IMG-20190826-WA0180-removebg-preview.png?resize=300%2C300&amp;ssl=1 300w,
             https://i0.wp.com/pleiadexpertise.com/wp-content/uploads/2022/05/IMG-20190826-WA0180-removebg-preview.png?resize=150%2C150&amp;ssl=1 150w
           " data-lazy-loaded="1" sizes="(max-width: 500px) 100vw, 500px" />
 
-        <div class="sm:flex gap-5 items-center hidden">
-            <div class="flex flex-row gap-2 text-blue-500">
-                <a href="">Accueil</a>
-                <img class="w-2 h-2 mt-2" src="Vector.png" alt="" />
+            <div class="sm:flex gap-5 items-center hidden">
+                <div class="flex flex-row gap-2 text-blue-500">
+                    <a href="">Accueil</a>
+                    <img class="w-2 h-2 mt-2" src="Vector.png" alt="" />
+                </div>
+                <div class="flex flex-row gap-2 text-blue-500">
+                    <a href="">A propos</a>
+                    <img class="w-2 h-2 mt-2" src="Vector.png" alt="" />
+                </div>
+                <div class="flex flex-row gap-2 text-blue-500">
+                    <a href="contact.html">Contact</a>
+                    <img class="w-2 h-2 mt-2" src="Vector.png" alt="" />
+                </div>
+                <div class="flex flex-row gap-2 text-blue-500">
+                    <a href="">Blog</a>
+                    <img class="w-2 h-2 mt-2" src="Vector.png" alt="" />
+                </div>
             </div>
-            <div class="flex flex-row gap-2 text-blue-500">
-                <a href="">A propos</a>
-                <img class="w-2 h-2 mt-2" src="Vector.png" alt="" />
+        </div>
+
+        <div class="hidden sm:flex text-blue-500">
+            <a href="catalogue.html">Nos Catalogues</a>
+        </div>
+        <div class="w-9/12 h-screen py-10 px-6 absolute hidden right-0 top-0 bottom-0 slide-left bg-lime-500"
+            id="mobile-menu">
+            <div class="absolute right-6 top-6 " id="closed-mobile-menu">
+                <img src="x-lg.svg" alt="mobile close">
             </div>
-            <div class="flex flex-row gap-2 text-blue-500">
-                <a href="contact.html">Contact</a>
-                <img class="w-2 h-2 mt-2" src="Vector.png" alt="" />
-            </div>
-            <div class="flex flex-row gap-2 text-blue-500">
-                <a href="">Blog</a>
-                <img class="w-2 h-2 mt-2" src="Vector.png" alt="" />
-            </div>
+            <ul class="flex flex-col gap-4">
+                <li class="flex gap-10 text-blue-500">Accueil</li>
+                <li class="flex gap-10 text-blue-500">A propos</li>
+                <li class="flex gap-10 text-blue-500">Contact</li>
+                <li class="flex gap-10 text-blue-500">Blog</li>
+            </ul>
+        </div>
+        <div class="sm:hidden" id="toggle-mobile-menu">
+            <img src="hamburger.png" alt="mobile menu" />
         </div>
     </div>
 
-    <div class="hidden sm:flex text-blue-500">
-        <a href="catalogue.html">Nos Catalogues</a>
-    </div>
-    <div class="w-9/12 h-screen py-10 px-6 absolute hidden right-0 top-0 bottom-0 slide-left bg-lime-500"
-        id="mobile-menu">
-        <div class="absolute right-6 top-6 " id="closed-mobile-menu">
-            <img src="x-lg.svg" alt="mobile close">
+    <!-- end navbar -->
+    <section class="relative h-screen flex items-center bg-cover bg-center bg-opacity-70"
+        style="background-image: url('pexels-andrea-piacquadio-3769021\ 1.png');">
+        <div class="absolute inset-0 bg-blue-500 opacity-50"></div>
+        <div class="absolute top-1/2 left-40 transform -translate-y-1/2 text-center">
+            <p class="text-white text-base md:text-lg lg:text-xl mb-4">PLEIADE EXPERTISE INTERNATIONALE</p>
+            <div class="mb-8"></div> <!-- Ajout d'une marge pour la distance verticale -->
+            <h1 class="text-white text-xl md:text-2xl lg:text-3xl font-semibold">CONTACTEZ-NOUS</h1>
         </div>
-        <ul class="flex flex-col gap-4">
-            <li class="flex gap-10 text-blue-500">Accueil</li>
-            <li class="flex gap-10 text-blue-500">A propos</li>
-            <li class="flex gap-10 text-blue-500">Contact</li>
-            <li class="flex gap-10 text-blue-500">Blog</li>
-        </ul>
-    </div>
-    <div class="sm:hidden" id="toggle-mobile-menu">
-        <img src="hamburger.png" alt="mobile menu" />
-    </div>
-</div>
+        <img class="absolute bottom-0" style="right: 200px; transform: translateY(30px);" src="Vector 2.png"
+            alt="Courbe">
+        <img class="absolute bottom-0" style="right: 240px; transform: translateY(60px);" src="Vector 4.png"
+            alt="Courbe">
+    </section>
 
-<!-- end navbar -->
-    <section class="relative h-screen flex items-center bg-cover bg-center bg-opacity-70" style="background-image: url('pexels-andrea-piacquadio-3769021\ 1.png');">
-    <div class="absolute inset-0 bg-blue-500 opacity-50"></div>
-    <div class="absolute top-1/2 left-40 transform -translate-y-1/2 text-center">
-        <p class="text-white text-base md:text-lg lg:text-xl mb-4">PLEIADE EXPERTISE INTERNATIONALE</p>
-        <div class="mb-8"></div> <!-- Ajout d'une marge pour la distance verticale -->
-        <h1 class="text-white text-xl md:text-2xl lg:text-3xl font-semibold">CONTACTEZ-NOUS</h1>
-    </div>
-    <img class="absolute bottom-0" style="right: 200px; transform: translateY(30px);" src="Vector 2.png" alt="Courbe">
-    <img class="absolute bottom-0" style="right: 240px; transform: translateY(60px);" src="Vector 4.png" alt="Courbe">
-</section>
+    <section class="flex flex-col md:flex-row py-12 px-4 space-y-4 md:space-y-0 md:space-x-4 items-center mt-8">
 
-<section class="flex flex-col md:flex-row py-12 px-4 space-y-4 md:space-y-0 md:space-x-4 items-center mt-8">
+        <div class="w-full sm:w-2/5 h-auto sm:h-4/5">
+            <div class="bg-blue-600 text-white p-2 mt-2 text-center w-full sm:w-[450px] h-auto sm:h-[220px]">
 
-   <div class="w-full sm:w-2/5 h-auto sm:h-4/5">
-    <div class="bg-blue-600 text-white p-2 mt-2 rounded-lg text-center">
-
-        <h3 class="text-2xl md:text-3xl font-semibold mb-4">
-            <a href="#"><i class="fas fa-at mr-2"></i>cabinet.pleiade@gmail.com</a>
-        </h3>
-        <h3 class="text-2xl sm:text-3xl font-semibold">
-            <i class="fas fa-phone-alt mr-2"></i>21 32 32 03 / 91 99 30 20
-        </h3>
-     </div>
-    </div>
-
-    
-
-    <div class="w-full md:w-3/5">
-        <div class="border-4 border-blue-600 h-96 md:h-[3*var(--contact-panel-height)] md:flex-grow rounded-lg">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d247.8251846493223!2d2.4272561468278484!3d6.3677756634310905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1023558aeb593fb9%3A0x8e241459a501f7a!2zQ29uc3VsYXQgZHUgU8OpbsOpZ2FsIMOgIENvdG9ub3U!5e0!3m2!1sfr!2sma!4v1692023172868!5m2!1sfr!2sma" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <h3 class="text-2xl sm:text-3xl font-semibold mb-4 mt-0 sm:mt-[55px] ">
+                    <a href="#"><i class="fas fa-at mr-2"></i>cabinet.pleiade@gmail.com</a>
+                </h3>
+                <h3 class="text-2xl sm:text-3xl font-semibold">
+                    <i class="fas fa-phone-alt mr-2"></i>21 32 32 03 / 91 99 30 20
+                </h3>
+            </div>
         </div>
-    </div>
-   
-</section>
-<!-- footer -->
+
+
+
+        <div class="w-full sm:w-[700px] ">
+            <div class="border-4 border-blue-600 h-96 sm:h-[500px] sm:flex-grow rounded-lg">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d247.8251846493223!2d2.4272561468278484!3d6.3677756634310905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1023558aeb593fb9%3A0x8e241459a501f7a!2zQ29uc3VsYXQgZHUgU8OpbsOpZ2FsIMOgIENvdG9ub3U!5e0!3m2!1sfr!2sma!4v1692023172868!5m2!1sfr!2sma"
+                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+
+    </section>
+    <!-- footer -->
     <div class="bg-lime-500 flex gap-8 h-72">
         <div class="mt-[50px] justify-between items-center px-4">
             <div class="">
@@ -143,28 +148,28 @@
                     © Copyright 2022 </br>
                     Pleiade Expertise Internationale.</br>
                     Tout droit réservé.
-    
+
                 </p>
             </div>
-    
+
         </div>
         <div class="flex mt-[80px] gap-8">
-    
+
             <div class=" flex flex-row  text-white font-semibold">
                 <a href=""> | Accueil</a>
-    
+
             </div>
             <div class="flex flex-row  text-white font-semibold">
                 <a href=""> | A propos</a>
-    
+
             </div>
             <div class="flex flex-row  text-white font-semibold">
                 <a href="contact.html"> | Contact</a>
-    
+
             </div>
             <div class="flex flex-row  text-white font-semibold">
                 <a href=""> | Blog</a>
-    
+
             </div>
         </div>
         <div class=" flex justify-center items-center mt-4">
@@ -179,34 +184,34 @@
                 (229) 21 32 32 03 / (229) 91 99 30 20 <br>
                 RCCM: RB/COT/19 B 24897 <br>
                 IFU:3201910850746
-    
+
             </p>
-    
+
             <div class="flex items-center gap-4 mt-12 mb-10  border-t-2 border-white pt-2 ">
                 <!-- <img  class="h-8 mt-[20px] "src="Group 10.png" alt=""> -->
-                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-facebook"
-                    viewBox="0 0 16 16">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                    class="bi bi-facebook" viewBox="0 0 16 16">
                     <path
                         d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
                 </svg>
-    
-                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-linkedin"
-                    viewBox="0 0 16 16">
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                    class="bi bi-linkedin" viewBox="0 0 16 16">
                     <path
                         d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
                 </svg>
-    
+
                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-twitter"
                     viewBox="0 0 16 16">
                     <path
                         d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
                 </svg>
-    
-    
-    
+
+
+
             </div>
         </div>
-    
+
     </div>
     <!-- end footer -->
     <script>
